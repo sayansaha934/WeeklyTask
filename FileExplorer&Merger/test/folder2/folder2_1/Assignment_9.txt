@@ -1,0 +1,10 @@
+1. To what does a relative path refer?
+2. What does an absolute path start with your operating system?
+3. What do the functions os.getcwd() and os.chdir() do?
+4. What are the . and .. folders?
+5. In C:\bacon\eggs\spam.txt, which part is the dir name, and which part is the base name?
+6. What are the three “mode” arguments that can be passed to the open() function?
+7. What happens if an existing file is opened in write mode?
+8. How do you tell the difference between read() and readlines()?
+9. What data structure does a shelf value resemble?
+
