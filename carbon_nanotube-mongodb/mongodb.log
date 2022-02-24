@@ -1,0 +1,30 @@
+2022-02-24 04:09:48,271 INFO initialized the process
+2022-02-24 04:09:49,873 INFO checking whether database present or not:False
+2022-02-24 04:09:50,316 INFO checking whether collection present or not: False
+2022-02-24 04:09:51,351 INFO creating database: DB:mongo_project created successfully
+2022-02-24 04:09:52,122 INFO craeteCollection():Collection:carbon_nanotube in DB:mongo_project created successfully
+2022-02-24 04:09:56,161 INFO insertOneData()-Data inserted into Collection:carbon_nanotube of Database:mongo_project
+2022-02-24 04:09:58,436 INFO insertManyData()-Data inserted into Collection:carbon_nanotube of Database:mongo_project
+2022-02-24 04:10:03,936 INFO uploadDataset():Dataset:carbon_nanotubes.csv uploaded successfully in Collection:carbon_nanotube of Database:mongo_project
+2022-02-24 04:10:09,336 INFO Returned data: <pymongo.cursor.Cursor object at 0x0000028B4B469DC0>
+2022-02-24 04:10:14,655 INFO filtering data based on condition:<pymongo.cursor.Cursor object at 0x0000028B4D464220>
+2022-02-24 04:10:21,509 INFO updateOne()-Dataset updated successfully
+2022-02-24 04:10:23,840 INFO updateAll()-Dataset updated successfully
+2022-02-24 04:10:26,206 INFO deleteOneRecord()-One record based on condition:{'Chiral indice n': '2'} deleted
+2022-02-24 04:10:31,504 INFO deleteAllRecord()-All record based on condition:{'Chiral indice n': '2'} deleted
+2022-02-24 04:10:35,613 INFO dropCollection()-Collection:carbon_nanotube of Database:mongo_project dropped successfully
+2022-02-24 09:29:24,820 INFO initialized the process
+2022-02-24 09:29:27,040 INFO checking whether database present or not:False
+2022-02-24 09:29:32,070 INFO checking whether collection present or not: False
+2022-02-24 09:29:34,387 INFO creating database: DB:mongo_project created successfully
+2022-02-24 09:29:37,414 INFO craeteCollection():Collection:carbon_nanotube in DB:mongo_project created successfully
+2022-02-24 09:29:40,395 INFO insertOneData()-Data inserted into Collection:carbon_nanotube of Database:mongo_project
+2022-02-24 09:29:43,331 INFO insertManyData()-Data inserted into Collection:carbon_nanotube of Database:mongo_project
+2022-02-24 09:29:49,166 INFO uploadDataset():Dataset:carbon_nanotubes.csv uploaded successfully in Collection:carbon_nanotube of Database:mongo_project
+2022-02-24 09:31:53,396 INFO Returned data: <pymongo.cursor.Cursor object at 0x000002100573BCA0>
+2022-02-24 09:31:54,995 INFO filtering data based on condition:<pymongo.cursor.Cursor object at 0x00000210060B6A00>
+2022-02-24 09:31:57,029 INFO updateOne()-Dataset updated successfully
+2022-02-24 09:31:59,374 INFO updateAll()-Dataset updated successfully
+2022-02-24 09:32:01,732 INFO deleteOneRecord()-One record based on condition:{'Chiral indice n': '2'} deleted
+2022-02-24 09:32:05,755 INFO deleteAllRecord()-All record based on condition:{'Chiral indice n': '2'} deleted
+2022-02-24 09:32:08,146 INFO dropCollection()-Collection:carbon_nanotube of Database:mongo_project dropped successfully
