@@ -1,0 +1,82 @@
+2022-02-24 00:16:52,877 INFO initialized process
+2022-02-24 00:37:19,306 INFO got count of words starting with each alphabet
+2022-02-24 00:48:03,925 INFO filtered data inside files and saved filtered files into a new folder
+2022-02-24 00:53:28,459 ERROR something went wrong to insert data into sqlite db:near ".": syntax error
+Traceback (most recent call last):
+  File "C:\Users\Sayan Saha\Desktop\WeeklyTask-FSDS\BagOfWord-SQLite\bagOfWords\wordOps.py", line 87, in insertIntoSqliteDb
+    cursor.execute(f'create table {tableName}({files[0]} text, {files[1]} text,{files[2]} text, {files[3]} text, {files[4]} text)')
+sqlite3.OperationalError: near ".": syntax error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\SAYANS~1\AppData\Local\Temp/ipykernel_13204/2084522080.py", line 2, in <module>
+    msg=obj.insertIntoSqliteDb('words.db', 'wordTable')
+  File "C:\Users\Sayan Saha\Desktop\WeeklyTask-FSDS\BagOfWord-SQLite\bagOfWords\wordOps.py", line 102, in insertIntoSqliteDb
+    raise Exception(f"something went wrong to insert data into sqlite db:{str(e)}")
+Exception: something went wrong to insert data into sqlite db:near ".": syntax error
+2022-02-24 01:12:33,892 INFO initialized process
+2022-02-24 01:12:41,936 ERROR something went wrong to insert data into sqlite db:near ".": syntax error
+Traceback (most recent call last):
+  File "C:\Users\Sayan Saha\Desktop\WeeklyTask-FSDS\BagOfWord-SQLite\bagOfWords\wordOps.py", line 87, in insertIntoSqliteDb
+    cursor.execute(f'create table "{tableName}"({files[0]} text, {files[1]} text,{files[2]} text, {files[3]} text, {files[4]} text)')
+sqlite3.OperationalError: near ".": syntax error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\SAYANS~1\AppData\Local\Temp/ipykernel_1560/2084522080.py", line 2, in <module>
+    msg=obj.insertIntoSqliteDb('words.db', 'wordTable')
+  File "C:\Users\Sayan Saha\Desktop\WeeklyTask-FSDS\BagOfWord-SQLite\bagOfWords\wordOps.py", line 102, in insertIntoSqliteDb
+    raise Exception(f"something went wrong to insert data into sqlite db:{str(e)}")
+Exception: something went wrong to insert data into sqlite db:near ".": syntax error
+2022-02-24 01:24:40,005 INFO initialized process
+2022-02-24 01:24:46,586 ERROR something went wrong to insert data into sqlite db:near ".": syntax error
+Traceback (most recent call last):
+  File "C:\Users\Sayan Saha\Desktop\WeeklyTask-FSDS\BagOfWord-SQLite\bagOfWords\wordOps.py", line 87, in insertIntoSqliteDb
+    cursor.execute(f'create table {dbName}.{tableName}({files[0]} text, {files[1]} text,{files[2]} text, {files[3]} text, {files[4]} text)')
+sqlite3.OperationalError: near ".": syntax error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\SAYANS~1\AppData\Local\Temp/ipykernel_1532/2084522080.py", line 2, in <module>
+    msg=obj.insertIntoSqliteDb('words.db', 'wordTable')
+  File "C:\Users\Sayan Saha\Desktop\WeeklyTask-FSDS\BagOfWord-SQLite\bagOfWords\wordOps.py", line 102, in insertIntoSqliteDb
+    raise Exception(f"something went wrong to insert data into sqlite db:{str(e)}")
+Exception: something went wrong to insert data into sqlite db:near ".": syntax error
+2022-02-24 02:59:15,166 INFO initialized process
+2022-02-24 03:00:03,531 ERROR insertIntoSqliteDb() missing 1 required positional argument: 'tableName'
+Traceback (most recent call last):
+  File "C:\Users\SAYANS~1\AppData\Local\Temp/ipykernel_1532/3927802387.py", line 2, in <module>
+    msg=obj.insertIntoSqliteDb('words.db')
+TypeError: insertIntoSqliteDb() missing 1 required positional argument: 'tableName'
+2022-02-24 03:00:35,548 INFO initialized process
+2022-02-24 03:00:41,554 INFO Data inserted into sqlite db
+2022-02-24 03:02:48,628 INFO all data in db showed
+2022-02-24 03:06:19,140 INFO initialized process
+2022-02-24 03:11:58,261 INFO initialized process
+2022-02-24 03:26:58,470 INFO initialized process
+2022-02-24 03:27:21,492 INFO initialized process
+2022-02-24 03:27:22,278 INFO getting word_count_list
+2022-02-24 03:27:52,989 INFO getting word_count_list
+2022-02-24 09:53:19,984 INFO initialized process
+2022-02-24 09:54:09,341 ERROR getWordAndCount() got an unexpected keyword argument 'show_words'
+Traceback (most recent call last):
+  File "C:\Users\SAYANS~1\AppData\Local\Temp/ipykernel_4408/2009816062.py", line 2, in <module>
+    word_count_list=obj.getWordAndCount(show_words=10)
+TypeError: getWordAndCount() got an unexpected keyword argument 'show_words'
+2022-02-24 10:06:44,572 INFO initialized process
+2022-02-24 10:17:42,750 INFO initialized process
+2022-02-24 10:26:00,043 INFO initialized process
+2022-02-24 10:31:37,597 INFO initialized process
+2022-02-24 10:36:39,538 INFO initialized process
+2022-02-24 10:53:52,183 INFO initialized process
+2022-02-24 10:55:55,063 INFO initialized process
+2022-02-24 11:03:43,312 INFO initialized process
+2022-02-24 11:30:08,207 INFO initialized process
+2022-02-24 11:30:23,845 INFO initialized process
+2022-02-24 11:30:32,375 INFO getting word_count_list
+2022-02-24 11:30:51,452 INFO getting word_count_list
+2022-02-24 11:31:12,032 INFO getting word_count_list
+2022-02-24 11:31:20,059 INFO getting word_count_list
