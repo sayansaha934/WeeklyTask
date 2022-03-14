@@ -1,0 +1,202 @@
+
+****************************************SQL*****************************************************
+ http://127.0.0.1:5000/sql_createTable
+
+ {
+    "host":"localhost",
+    "database":"testdb",
+    "user":"root",
+    "password":"password",
+    "table_name":"employee",
+    "col1":"id int primary key"
+    "col2":"name varchar(20)",
+    "col3":"age int(100)",
+    "col4":"post varchar(20)"
+}
+
+ http://127.0.0.1:5000/sql_insertIntoTable
+{
+    "host":"localhost",
+    "database":"testdb",
+    "user":"root",
+    "password":"password",
+    "table_name":"employee",
+    "col1":1
+    "col2":"amit bose",
+    "col3":29,
+    "col4":"ceo"
+}
+
+ http://127.0.0.1:5000/sql_updateTable
+
+ {
+    "host":"localhost",
+    "database":"testdb",
+    "user":"root",
+    "password":"password",
+    "table_name":"employee",
+    "colToUpdate":"post",
+    "updatedValue":"md",
+    "condition":"WHERE age=27"
+}
+
+ http://127.0.0.1:5000/sql_bulkUpload
+
+ {
+    "host":"localhost",
+    "database":"testdb",
+    "user":"root",
+    "password":"password",
+    "table_name":"employee",
+    "filepath" : "C:\\Users\\Sayan Saha\\Desktop\\FSDS\\flask_demo\\emp.csv"
+}
+
+ http://127.0.0.1:5000/sql_deleteFromTable
+
+{
+    "host":"localhost",
+    "database":"testdb",
+    "user":"root",
+    "password":"password",
+    "table_name":"employee",
+    "condition" : "WHERE name='rj sing'"
+}
+
+ http://127.0.0.1:5000/sql_downloadTable
+ {
+    "host":"localhost",
+    "database":"testdb",
+    "user":"root",
+    "password":"password",
+    "table_name":"employee",
+    "downloadPath" : "C:\\Users\\Sayan Saha\\Desktop\\FSDS\\flask_demo\\test.csv"
+}
+
+***********************************************MONGODB*********************************************************
+
+http://127.0.0.1:5000//mongo_createCollection
+
+{
+    "password":"test",
+    "database":"fsds",
+    "collection":"employee"
+}
+
+http://127.0.0.1:5000///mongo_insertIntoTable
+
+{
+    "password": "test",
+    "database": "fsds",
+    "collection": "employee",
+    "record": {"_id":"1", "name": "rk bose", "age":26, "post": "manager"}
+}
+
+http://127.0.0.1:5000//mongo_updateTable
+
+{
+    "password": "test",
+    "database": "fsds",
+    "collection": "employee",
+    "old_data": {"name": "rj sing"},
+    "new_data": {"age":30}
+}
+
+http://127.0.0.1:5000//mongo_bulkUpload
+
+{
+    "password": "test",
+    "database": "fsds",
+    "collection": "employee",
+    "filepath": "C:\\Users\\Sayan Saha\\Desktop\\FSDS\\flask_demo\\emp.csv"
+}
+
+http://127.0.0.1:5000//mongo_deleteFromTable
+
+{
+    "password": "test",
+    "database": "fsds",
+    "collection": "employee",
+    "condition": {"age": {"$gte":55}}
+}
+
+http://127.0.0.1:5000//mongo_downloadTable
+
+{
+    "password": "test",
+    "database": "fsds",
+    "collection": "employee",
+    "downloadPath": "C:\\Users\\Sayan Saha\\Desktop\\FSDS\\flask_demo\\mongotest.csv"
+}
+
+******************************************************CASSANDRA*************************************************************
+
+http://127.0.0.1:5000//cassandra_createTable
+
+{
+    "keyspace":"fsds",
+    "client_id": "fGajypaFbgdZJdXHQOPfghvA",
+    "client_secret":"LJ9PxOZJjZPbgYbhczcjKQotAqnu-leFLlZy3KZS0RE8BgTm0DonP,6k7,ZuHrkhyfwMHQhaBL5xHH6fxs2H6N2T6SqP,ve.rolsr3F9teMAyXHO6eD2c+xPCQH4nCy9",
+    "table_name":"employee",
+    "col1": "id int PRIMARY KEY",
+    "col2":"name text",
+    "col3":"age int",
+    "col4":"post text"
+}
+
+http://127.0.0.1:5000//cassandra_insertIntoTable
+
+{
+    "keyspace":"fsds",
+    "client_id": "fGajypaFbgdZJdXHQOPfghvA",
+    "client_secret":"LJ9PxOZJjZPbgYbhczcjKQotAqnu-leFLlZy3KZS0RE8BgTm0DonP,6k7,ZuHrkhyfwMHQhaBL5xHH6fxs2H6N2T6SqP,ve.rolsr3F9teMAyXHO6eD2c+xPCQH4nCy9",
+    "table_name":"employee",
+    "col1": ["id", 1],
+    "col2":["name", "Rahul kumar"],
+    "col3":["age", 28],
+    "col4":["post","ceo"]
+}
+
+
+http://127.0.0.1:5000//cassandra_updateTable
+
+{
+    "keyspace":"fsds",
+    "client_id": "fGajypaFbgdZJdXHQOPfghvA",
+    "client_secret":"LJ9PxOZJjZPbgYbhczcjKQotAqnu-leFLlZy3KZS0RE8BgTm0DonP,6k7,ZuHrkhyfwMHQhaBL5xHH6fxs2H6N2T6SqP,ve.rolsr3F9teMAyXHO6eD2c+xPCQH4nCy9",
+    "table_name":"employee",
+    "columnToUpdate": "post",
+    "updatedValue":"lawyer",
+    "id": 5
+}
+
+
+http://127.0.0.1:5000//cassandra_bulkUpload
+
+{
+    "keyspace":"fsds",
+    "client_id": "fGajypaFbgdZJdXHQOPfghvA",
+    "client_secret":"LJ9PxOZJjZPbgYbhczcjKQotAqnu-leFLlZy3KZS0RE8BgTm0DonP,6k7,ZuHrkhyfwMHQhaBL5xHH6fxs2H6N2T6SqP,ve.rolsr3F9teMAyXHO6eD2c+xPCQH4nCy9",
+    "table_name":"employee",
+    "filepath": "C:\\Users\\Sayan Saha\\Desktop\\FSDS\\flask_demo\\emp.csv"
+}
+
+
+http://127.0.0.1:5000//cassandra_deleteFromTable
+
+{
+    "keyspace":"fsds",
+    "client_id": "fGajypaFbgdZJdXHQOPfghvA",
+    "client_secret":"LJ9PxOZJjZPbgYbhczcjKQotAqnu-leFLlZy3KZS0RE8BgTm0DonP,6k7,ZuHrkhyfwMHQhaBL5xHH6fxs2H6N2T6SqP,ve.rolsr3F9teMAyXHO6eD2c+xPCQH4nCy9",
+    "table_name":"employee",
+    "id": 1
+}
+
+http://127.0.0.1:5000//cassandra_downloadTable
+
+{
+    "keyspace":"fsds",
+    "client_id": "fGajypaFbgdZJdXHQOPfghvA",
+    "client_secret":"LJ9PxOZJjZPbgYbhczcjKQotAqnu-leFLlZy3KZS0RE8BgTm0DonP,6k7,ZuHrkhyfwMHQhaBL5xHH6fxs2H6N2T6SqP,ve.rolsr3F9teMAyXHO6eD2c+xPCQH4nCy9",
+    "table_name":"employee",
+    "downloadpath": "C:\\Users\\Sayan Saha\\Desktop\\FSDS\\flask_demo\\cassandratest.csv"
+}
